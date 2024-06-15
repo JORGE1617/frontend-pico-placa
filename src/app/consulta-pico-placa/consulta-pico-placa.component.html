@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Consulta de Pico y Placa</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="plateNumber">Número de placa:</label>
+      <input type="text" id="plateNumber" formControlName="plateNumber" placeholder="ABC1234" />
+    </div>
+    <div class="form-group">
+      <label for="dateTime">Fecha y hora:</label>
+      <input type="datetime-local" id="dateTime" formControlName="dateTime" />
+    </div>
+    <button type="submit" class="btn btn-primary">Consultar</button>
+  </form>
+  
+  <div *ngIf="resultado" class="resultado">
+    <h3>Resultado:</h3>
+    <p>{{ resultado }}</p>
+  </div>
+</div>
