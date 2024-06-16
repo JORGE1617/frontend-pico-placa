@@ -5,7 +5,7 @@
 2. NPM: Tener instalado NPM, en el caso de no tener ejecutar el siguiente comando en cmd npm install -g @angular/cli.
 
 # Clonar o descargar el proyecto usando el IDE de preferencia
-git clone 
+git clone https://github.com/JORGE1617/frontend-pico-placa.git
 
 # Ejecutar el comando para instalar dependencias 
 npm install
